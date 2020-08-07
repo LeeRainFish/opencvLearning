@@ -22,11 +22,11 @@ if __name__ == "__main__":
     fftshift = np.fft.fftshift(dft)
 
     magnitude_spectrum = np.log(cv.magnitude(fftshift[:, :, 0], fftshift[:, :, 1])) * 20
-    #
+
     # plt.subplot(121),plt.imshow(img,cmap="gray")
     # plt.title("input image"),plt.xticks([]),plt.yticks([])
     #
-    # plt.subplot(122),plt.imshow(magnitude_spectrum,cmap="gray")
+    # plt.subplot(120),plt.imshow(magnitude_spectrum,cmap="gray")
     # plt.title("magnitude_spectrum "),plt.xticks([]),plt.yticks([])
     #
     # plt.show()
